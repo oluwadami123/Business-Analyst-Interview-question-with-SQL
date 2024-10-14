@@ -1,11 +1,14 @@
 # Business-analyst-Interview-question
 
+## Overview:
+
 Today, I encountered a challenging business interview question that tested my technical skills and analytical abilities in SQL. I created the "Election" schema using MySQL Workbench, which consists of two tables: 
 a. candidates table and the 
 b. results table. 
 You can find the first sample question in the following images below:
 
 Solutions:
+
 First, I joined the two tables using a Full Inner Join based on their IDs since there were no nulls in the tables. Then, I selected only the important columns relevant to my analysis.
  Next, I used a window function ( RANK() ) to rank each candidate's votes according to their constituencies. 
 Finally, I inserted the entire query into a Common Table Expression (CTE) and extracted only the candidates whose party had the highest votes in their constituencies.
