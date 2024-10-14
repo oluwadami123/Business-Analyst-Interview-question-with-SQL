@@ -5,19 +5,17 @@ a. candidates table and the
 b. results table. 
 You can find the first sample question in the following images below:
 
-1. Election
+Solutions:
+First, I joined the two tables using a Full Inner Join based on their IDs since there were no nulls in the tables. Then, I selected only the important columns relevant to my analysis.
+ Next, I used a window function ( RANK() ) to rank each candidate's votes according to their constituencies. 
+Finally, I inserted the entire query into a Common Table Expression (CTE) and extracted only the candidates whose party had the highest votes in their constituencies.
 
-   
+
 ![SQL_initerview question 1](https://github.com/user-attachments/assets/7cbde44a-e771-4bba-bd67-1a90adedea9f)
 
 ![SQL question 1](https://github.com/user-attachments/assets/828caea1-0f44-4279-a27b-e3cf38783491)
 
 ![SQL question 3PNG](https://github.com/user-attachments/assets/a71fd195-4a94-40fd-a277-c591dcdb09ae)
-
-Solutions:
-First, I joined the two tables using a Full Inner Join based on their IDs since there were no nulls in the tables. Then, I selected only the important columns relevant to my analysis.
- Next, I used a window function ( RANK() ) to rank each candidate's votes according to their constituencies. 
-Finally, I inserted the entire query into a Common Table Expression (CTE) and extracted only the candidates whose party had the highest votes in their constituencies.
 
 ![Election 1](https://github.com/user-attachments/assets/9911508e-6b1b-4628-8aab-afd89c8d3222)
 
