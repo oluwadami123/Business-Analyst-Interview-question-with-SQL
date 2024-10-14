@@ -1,4 +1,4 @@
-# Business-analyst-Interview-question
+# ELection Analysis with SQL
 
 ## Overview:
 
